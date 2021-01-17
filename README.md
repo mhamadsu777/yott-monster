@@ -1,2 +1,0 @@
-# tsripatele.github.io
-Modzx
