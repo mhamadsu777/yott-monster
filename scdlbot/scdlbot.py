@@ -336,9 +336,9 @@ class ScdlBot:
                     orig_msg_id = str(reply_to_message_id)
                     self.chat_storage[str(chat_id)][orig_msg_id] = {"message": update.message, "urls": urls,
                                                                     "source_ip": source_ip, "proxy": proxy}
-                    question = "🎶 links found, what to do?"
-                    button_dl = InlineKeyboardButton(text="✅ Download", callback_data=" ".join([orig_msg_id, "dl"]))
-                    button_link = InlineKeyboardButton(text="❇️ Links",
+                    question = "هل تريد تحميل هذه الاغنية 🌞"
+                    button_dl = InlineKeyboardButton(text="✅ حملها", callback_data=" ".join([orig_msg_id, "dl"]))
+                    button_link = InlineKeyboardButton(text="❇️ الروابط",
                                                        callback_data=" ".join([orig_msg_id, "link"]))
                     button_cancel = InlineKeyboardButton(text="❎", callback_data=" ".join([orig_msg_id, "nodl"]))
                     inline_keyboard = InlineKeyboardMarkup([[button_dl, button_link, button_cancel]])
