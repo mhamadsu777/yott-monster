@@ -127,8 +127,8 @@ class ScdlBot:
         dispatcher.add_error_handler(self.error_callback)
 
         self.bot_username = self.updater.bot.get_me().username
-        self.RANT_TEXT_PRIVATE = "🇸🇾 By DRX @J_69_L"
-        self.RANT_TEXT_PUBLIC = "[The bot works fine](t.me/{}?start=1)".format(
+        self.RANT_TEXT_PRIVATE = ""
+        self.RANT_TEXT_PUBLIC = "[The Bot Fine](t.me/{}?start=1)".format(
             self.bot_username)
 
     def start(self, use_webhook=False, webhook_host="127.0.0.1", webhook_port=None, cert_file=None, cert_key_file=None,
